@@ -1,5 +1,6 @@
 .idea
 data
 jsx/node_modules
+jsx/package-lock.json
 local
 venv
