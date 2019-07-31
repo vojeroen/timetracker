@@ -12,7 +12,7 @@ Several important features are missing:
 - only support for sqlite
 - security
 
-Also, the docker image only runs gunicorn, which servers static assets as well. It would be better if static assets were served by a dedicated nginx instance.
+Also, the docker image only runs gunicorn, which serves static assets as well. It would be better if static assets were served by a dedicated nginx instance.
 
 ## Development
 The repository contains two separate sources:
@@ -26,7 +26,7 @@ Both sources work independently from one another. It is thus important that the 
 ### Python backend
 A virtual environment can be created baed on `requirements.txt`. Git is configured to ignore the `venv` directory.
 
-To run a development server, execute the following command in `python`.
+To run a development server, execute the following command in `app`.
 ```bash
 FLASK_APP=app/timer.py FLASK_ENV=development FLASK_DEBUG=1 python -m flask run
 ``` 
